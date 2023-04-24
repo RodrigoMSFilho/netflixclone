@@ -11,7 +11,7 @@ export default ({black}) => {
             </div>
             <div className="header--user">
                 <a href="/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Nficon2016.png" alt="Usuário" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Ar_Icon_User.svg" alt="Usuário" />
                 </a>
             </div>
         </header>
