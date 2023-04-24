@@ -11,7 +11,7 @@ export default ({black}) => {
             </div>
             <div className="header--user">
                 <a href="/">
-                    <img src="%PUBLIC_URL%/user.png" alt="Usuário" />
+                    <img src="public/user.png" alt="Usuário" />
                 </a>
             </div>
         </header>
