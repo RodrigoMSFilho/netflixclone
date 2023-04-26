@@ -31,11 +31,12 @@
                 </div>
 
                 <div>
-                    <a href= "http://localhost:3000/App.js">
-                    <button class="submit">
+                   
+                    <button class="submit"
+                    <a onclick="window.location.href='http://localhost:3000/App.js'"> </a>
                         Entrar
                     </button>
-                </a>
+                
                 </div>
             </form>
 
@@ -50,12 +51,6 @@
                     </a>
                 </div>
             </div>
-
-            <div class="login_footer">
-                <div class="login_facebook">
-                    <span><img height="20px" src="Facebook_logo.png" alt="facebook"></span>
-                    <span><a href="#">Conectar com Facebook</a></span>
-                </div>
 
                 <div class="sign_up">
                     <p>Novo por aqui? <a href="#">Assine agora.</a></p>
