@@ -1,3 +1,10 @@
+<?php
+include('conexao.php');
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,6 +17,7 @@
 </head>
 
 <body>
+    
     <div class="header">
         <div class="logo">
             <a href="#">
@@ -21,13 +29,13 @@
     <div class="login_body">
         <div class="login_box">
             <h2>Entrar</h2>
-            <form>
+            <form action= "" method="POST">
                 <div class="input_box">
-                    <input required type="email" placeholder="Email ou número de telefone">
+                    <input required type="email" placeholder="Email ou número de telefone" name="usuario">
                 </div>
 
                 <div class="input_box">
-                    <input required type="password" placeholder="Senha">
+                    <input required type="password" placeholder="Senha" name="senha">
                 </div>
 
                 <div>
