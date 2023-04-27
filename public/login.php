@@ -66,7 +66,7 @@ if(strlen($_POST['email']) == 0) {
         $_SESSION['id'] = $usuario['id'];
         $_SESSION['nome'] = $usuario['nome'];
 
-        header("Location: http://localhost:3000/App.js");
+        header("Location: http://localhost:3000/App.js/$_SESSION");
 
     } else {
         echo "Falha ao logar! E-mail ou senha incorretos";
