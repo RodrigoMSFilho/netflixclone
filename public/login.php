@@ -1,5 +1,42 @@
 <?php
 include('conexao.php');
+
+    if(isset($_POST['email']) || isset($_POST['senha'])) {
+
+    if(strlen($_POST['email']) == 0) {
+        echo "Preencha seu e-mail";
+    } else if(strlen($_POST['senha']) == 0) {
+        echo "Preencha sua senha";
+    } else {
+    
+        $email = $mysqli->real_escape_string($_POST['email']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+    
+        $sql_code = "SELECT * FROM user WHERE email = '$email' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
+    
+        $quantidade = $sql_query->num_rows;
+    
+        if($quantidade == 1) {
+            
+            $usuario = $sql_query->fetch_assoc();
+    
+            if(!isset($_SESSION)) {
+                session_start();
+            }
+    
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+    
+            header("Location: http://localhost:3000/App.js/$_SESSION");
+    
+        } else {
+            
+            echo 
+           "E-mail ou senha incorretos";
+        }
+    }
+    } 
 ?>
 
 
@@ -13,7 +50,6 @@ include('conexao.php');
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
-
 <body>
     
     <div class="header">
@@ -37,9 +73,7 @@ include('conexao.php');
                 </div>
 
                 <div>
-                   
-                    <button class="submit" name="logar">
-                <?php    if(isset($_POST['email']) || isset($_POST['senha'])) {
+                <?php if(isset($_POST['email']) || isset($_POST['senha'])) {
 
 if(strlen($_POST['email']) == 0) {
     echo "Preencha seu e-mail";
@@ -69,13 +103,16 @@ if(strlen($_POST['email']) == 0) {
         header("Location: http://localhost:3000/App.js/$_SESSION");
 
     } else {
-        echo "Falha ao logar! E-mail ou senha incorretos";
+        
+        echo "E-mail ou senha incorretos";
     }
 }
-} ?>
-                        Entrar
-                    </button>
-                
+} 
+?>
+
+</html>
+                    <button class="submit" name="logar">Entrar</button>
+ 
                 </div>
             </form>
 
@@ -91,6 +128,8 @@ if(strlen($_POST['email']) == 0) {
                 </div>
             </div>
 
+            
+
                 <div class="sign_up">
                     <p>Novo por aqui? <a href="#">Assine agora.</a></p>
                 </div>
@@ -101,6 +140,8 @@ if(strlen($_POST['email']) == 0) {
             </div>
         </div>
     </div>
+
 </body>
+
 
 </html>
