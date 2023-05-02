@@ -10,10 +10,10 @@ export default ({black}) => {
                     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix" />
                 </a>
             </div>
-            <div className="header--user">
-                <a href="/">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Ar_Icon_User.svg" alt="Usuário" />
-                
+            <div className="header--user" id="menu">
+                <a href="/"> 
+                   <button className='buttonuser'> <img className='imgclass' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Usuário" />
+                   </button>
                 </a>
                 
             </div>

@@ -28,9 +28,31 @@ header.black {
 
 .header--user {
     height:  40px;
+    width: 40px;
 }
 
 .header--user img {
     height: 100%;
     border-radius: 3px;
 }
+
+.buttonuser {
+    padding: 0px;
+    right: 0px;
+    top: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    border-bottom: auto;
+    align-items: center;
+    
+    }
+    
+    .imgclass{
+    
+    opacity: 1px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: auto;
+    
+    }

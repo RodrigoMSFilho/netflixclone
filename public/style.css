@@ -167,16 +167,9 @@ body::before {
     text-decoration: underline;
 }
 
-.modal {
-    padding: 40px;
-    z-index: 90;
-    position: center;
-    max-width: 200px;
-    height: 350px;
-    margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75);
-    border-radius: 10px;
-    box-sizing: border-box;
-    transform: translateX(-50%);
-}
+button:hover {
+    opacity: 1;
+  }
+  
+
 
