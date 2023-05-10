@@ -44,7 +44,7 @@ header.black {
     max-height: 0px;
     border-bottom: auto;
     align-items: center;
-    
+        
     }
     
     .imgclass{
@@ -53,6 +53,7 @@ header.black {
     padding: 0px;
     width: 40px;
     height: 40px;
-    cursor: auto;
+    cursor: pointer;
+    display: block;
     
     }

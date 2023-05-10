@@ -20,3 +20,14 @@ export default ({black}) => {
         </header>
     )
 }
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+    menuMobile.classList.remove('open');
+    document.querySelector('icon').scr="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+    } else {
+    menuMobile.classList.add('open)')
+
+    }
+}
