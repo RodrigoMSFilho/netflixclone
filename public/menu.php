@@ -25,23 +25,29 @@ include('conexao.php');
     <div class="login_body">
 
         <div class="login_box">
-            <h2>Olá <?php echo $usuario ?> </h2>
+            <h2>Olá <?php echo $email ?> </h2>
             <li></li>
             <li></li>
  
+                <div> 
+                    <a href="http://localhost:3000/App.js/">
+                <button class="submit"> Minha Conta </button>
+                    </a>
+                <li></li>
+                </div>
+                
+
                 <div>
-                <button class="submit" href="#"> Minha Conta </button>
+                    <a  href="http://localhost:3000/App.js/">
+                <button class="submit"> Voltar </button>
+                    </a>
                 <li></li>
                 </div>
 
-
                 <div>
-                <button class="submit" href="#"> Minha Lista </button>
-                <li></li>
-                </div>
-
-                <div>
-                <button class="submit" href="#"> Sair </button>
+                    <a  href="http://localhost/netflixclone/public/login.php">
+                <button class="submit"> Sair </button>
+                    </a>
                 <li></li>
                 </div>
 

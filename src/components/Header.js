@@ -11,8 +11,9 @@ export default ({black}) => {
                 </a>
             </div>
             <div className="header--user" id="menu">
-                <a href="/"> 
+                <a href="http://localhost/netflixclone/public/menu.php"> 
                    <button className='buttonuser'> <img className='imgclass' src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Usuário" />
+                
                    </button>
                 </a>
                 
