@@ -2,6 +2,7 @@
 include('conexao.php');
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -25,17 +26,9 @@ include('conexao.php');
     <div class="login_body">
 
         <div class="login_box">
-            <h2>Olá <?php echo $email ?> </h2>
+            <h2>Menu de Usuário </h2>
             <li></li>
             <li></li>
- 
-                <div> 
-                    <a href="http://localhost:3000/App.js/">
-                <button class="submit"> Minha Conta </button>
-                    </a>
-                <li></li>
-                </div>
-                
 
                 <div>
                     <a  href="http://localhost:3000/App.js/">
