@@ -92,7 +92,7 @@ if(strlen($_POST['email']) == 0) {
             
 
                 <div class="sign_up">
-                    <p>Novo por aqui? <a href="#">Assine agora.</a></p>
+                    <p>Novo por aqui? <a href="http://localhost/netflixclone/public/cadastro.php#">Assine agora.</a></p>
                 </div>
 
                 <div class="terms">
